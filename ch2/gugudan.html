@@ -12,21 +12,9 @@
         242
         25
         i+1~9*/
-            let dan = parseInt(prompt("단을 입력하세요"));
-            let result = ""; //누적값을 위한 변수
+            
 
-            for(var i = 1; i < 10; i++) {
-                /*result += dan + "x" + i + "=" + (
-                    dan * i
-                ) + <"br">; */
-
-                let current_value = dan + "x" + i + "=" + (dan * i) + "<br>";
-                result += current_value; // 누적값 = 누적값 + 현재값
-            } 
-            document.write(result);
-                            
-                            
-                            /* for(var dan=1; dan<10; dan++) {
+            /* for(var dan=1; dan<10; dan++) {
                                 document.write(dan + '단 <br>');
                                 for (var i = 1; i < 10; i++) {
                                     document.write(dan + "x" + i + "=" + (
@@ -37,5 +25,11 @@
                             }*/
         </script>
     </head>
-    <body></body>
+    <body>
+        <h1>구구단</h1>
+        <button type="button" id="but" >입력하기</button>
+        <!--버튼 리절트 이용해서 버튼눌렀을때 알림칸 뜨게해서
+        
+        -->
+    </body>
 </html>
