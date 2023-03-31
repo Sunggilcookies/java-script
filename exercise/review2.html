@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+<body>
+    <script>
+        //return이 있는 함수
+        //매개 변수 1개(1이 증가하는 함수
+        function oneUp(x){
+            x += 1;
+            document.write(x);
+            return x;
+            
+        }
+        //외부에는 x라는 매개변수가 없음 
+        //oneUp()이라는 함수가 있을 뿐
+        let num = oneUp(10)
+        
+        document.write('<br>'+num)
+        // document.write(oneUp(10));
+
+        document.write(Math.abs(-11));//11
+
+        function myAbs(x){
+            if(x>0){return x;}
+            if(x<0){return -x;}
+
+        }
+        //호출
+        myAbs(-11)
+        document.write('<br>'+myAbs(-3));
+
+        //메개변수 2개
+        function subNumber(x,y){
+            var z= x-y
+            document.write('<br>'+z);
+            return z; //값을 변환하고 소멸
+        }
+        
+        let result  = subNumber(3,4);
+        document.write('<br>'+subNumber(3,4));
+        document.write('<br>'+result);
+        
+        
+
+    </script>
+    
+</body>
+</html>

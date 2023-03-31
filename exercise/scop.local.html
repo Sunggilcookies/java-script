@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 유효 범위</title>
+</head>
+<body>
+    <h3>지역 변수의 유효 범위</h3>
+    
+    <script>
+        //메인 영역
+        // let animal = 'cat';
+
+        //지역변수 생성 - 함수 또는 제어문의 코드블럭 내부에서 생성됌
+        // 생성 - 함수또는 제어문의 코드블럭 내부에서 생성됌
+        // 소멸 - 함수나 제어문의 코드 블럭을벗어났을때 메모리에서 해제
+        function oneUp(){
+            let x =1 ; // x는 지역 변수
+            document.write(x+"<br>");
+            document.write(x+"<br>");
+            x = x + 1 ;
+            return x;
+        }
+        // let num = oneUp();
+        document.write(oneUp()+"<br>");
+        document.write(oneUp()+"<br>");
+        document.write(x);
+
+    </script>
+</body>
+</html>
