@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 생성과 사용</title>
+    <script>
+        //책1권 - 속성(key): 속성값(value)
+        //북이라는 객체를 지정해주고 중괄호를 열어서
+        // 속성과 속성값을 연결해준다
+        let book ={
+            title : "웹 표준의 정석",
+            author : "고경희",
+            pages : 650,
+            price : 30000,
+            //객체 내부에서는 this를 사용
+        
+            info : function(){
+                alert(this.title+ "책의 분량은"
+               + this.pages + "페이지입니다.")
+
+            }
+        }    
+        
+
+
+            //객체이름.속성, 객체이름.함수
+        document.write(book.title)
+        document.write(book.author)
+        document.write(book.price)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -33,22 +33,26 @@
         document.write("<p>전체 응모자수 : " + member + "명</p>");
         document.write("<p>당첨자 : ");
         let winner = new Array(num);
+
         for (let i = 0; i < winner.length; i++) {
           let pickedOne = Math.floor(Math.random() * member + 1);
           winner[i] = pickedOne; // 당첨된 1개 번호를 배열에 저장
+          //중복제거
           for (let j = 0; j < i; j++) {
             if (winner[j] == winner[i]) {
               i--;
             }
             /*
-          중복검사
+          중복불허
           winner = [5,20,11,11,16]
           i=0,winner[0]=5,j=0 false
           i=1,winner[0]=5 winner[1]=20 
           i=2,winner[0]=5 winner[1]=20 
           i=3,winner[0]=5 winner[1]=20 winner[2]=11,j=2
           i=,winner[0]=5 winner[1]=20 winner[2]=11,winner[3]=11 j=3
+
           */
+        
           }
         }
         for (let i = 0; i < winner.length; i++) {

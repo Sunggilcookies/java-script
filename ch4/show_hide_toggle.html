@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>버튼 토글</title>
-    <style>
-        button{margin: 10px;}
-        #pic{display: none;}
-
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>버튼 토글</title>
+        <style>
+            button {
+                margin: 10px;
+            }
+            #pic {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
         <button onclick="showHide()" id="btnText">보이기</button>
-        
+
         <div>
             <img src="images/flower.jpg" art="꽃" id="pic">
         </div>
         <script>
-               
+            /*
+                toggle 기능
+                let state = true; //상태변수(전역변수)
+                if(state=true){
+                    실행 1
+                    state = false;
+                }else{
+                    실행 2
+                    state = true;
+                }
+              */
+
+            let state = true; //상태 변수 -전역(global)에 위치
+            //function 안에 상태변수 지정해주면 값이 안 변함
+            function showHide() {
+                
+                btnText = document.getElementById("btnText");
+                let img = document.getElementById("pic");
+                
+                if (state) {
+                    img.style.display = "block";
+                    btnText.innerText= " 숨기기";
+                    state = false;
+
+                } else {
+                    img.style.display = "none";
+                    btnText.innerText= " 보이기";
+                    state = true;
+                }
+            }
+
+            /*
             function showHide(){
                 //1일때 show block 0일때 hide none상태
-                 
+
                  let img = document.getElementById("pic");
                  let btnText = document.getElementById("btnText");
 
                 if(img.style.display == "block"){
                     img.style.display = "none";
                     btnText.innerText = "보이기";
-                   
+
                 }else{
                     img.style.display = "block"
                     btnText.innerText = "숨기기";
                 }
-            
+
             }
 
 
-        
+        */
         </script>
 
-   
-</body>
+    </body>
 </html>
