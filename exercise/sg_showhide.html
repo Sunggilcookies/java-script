@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이미지창</title>
+
+    </head>
+    <body>
+        <div id="container">
+            <img src="/images/activity.jpg" id="pic">
+            <button onclick="clicked()" id="btn">헬로우</button>
+        </div>
+        <script>
+            let img = document.getElementById("pic");
+            console.log(img)
+            function clicked(){
+                let btn = document.getElementById("btn");
+                img.style.display = "none"
+                console.log("ㅎㅇ")
+            }
+        </script>
+
+    </body>
+</html>

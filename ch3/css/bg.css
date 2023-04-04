@@ -17,13 +17,13 @@ ul li a{
 }
 
 ul li:nth-child(1) a:hover{
-    background-color: black;
+    background-color: rgb(0, 255, 64);
 }
 ul li:nth-child(2) a:hover{
-    background-color: rgb(50, 133, 101);
+    background-color: rgb(0, 0, 0);
 }
 ul li:nth-child(3) a:hover{
-    background-color: rgb(26, 71, 218);
+    background-color: rgb(247, 88, 167);
 }
 
 .box{

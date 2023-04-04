@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 정의</title>
+    <script>
+        /*
+        let 객체이름 = {
+            속성이름:값,
+             함수이름:function()}
+        */
+            let person = {
+                name : "손흥민",
+                age : 34,
+                isMerried: true,
+                numberOfChildren:3,
+                
+            //함수
+            play : function(){
+                alert(this.name+"홈런을 친다");
+            }
+
+            }
+            //객체 사용
+            document.write("이름 : "+person.name)
+            document.write("나이 : "+person.age)
+            document.write("결혼유무 : "+person.isMerried)
+            document.write("자녀수: "+person.numberOfChildren)
+            person.play();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

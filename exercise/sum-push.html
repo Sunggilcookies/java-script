@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zz</title>
+    </head>
+    <body>
+        <script>
+            //문자열은 특별한 1차언 배열이다.
+      
+            //점수의 총점과 평균
+            let even = [1,2,3,4,5,6,7,8,9,10];
+            let sumV = 0;
+            for(let i in even){
+                if(even[i]%2==1){
+                sumV= sumV + even[i];
+                
+                }
+                
+               
+            }  
+
+            //배열의 복사 
+            // let arr - []빈 배열
+            // let arr =new Array(5);
+
+
+
+
+
+            document.write("홀수의 합계합계:"+sumV+"<br>");
+
+            even.push(sumV)
+            document.write("배열:"+even);
+            
+
+        </script>
+
+    </body>
+</html>
