@@ -2,7 +2,8 @@
     width: 600px; margin : 0 auto;
     text-align: center;
 }
-h2{text-aline:center;}
+/* 폼스타일 */
+h2{text-align :center;}
 form{background: #0094ff; padding: 30px;}
 input{width: 420px; padding: 10px;}
 .btnAdd{width: 60px;padding: 10px;}
