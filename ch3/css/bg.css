@@ -17,6 +17,7 @@ ul li a{
 }
 
 ul li:nth-child(1) a:hover{
+<<<<<<< HEAD
     background-color: rgb(0, 255, 64);
 }
 ul li:nth-child(2) a:hover{
@@ -24,6 +25,15 @@ ul li:nth-child(2) a:hover{
 }
 ul li:nth-child(3) a:hover{
     background-color: rgb(247, 88, 167);
+=======
+    background-color: black;
+}
+ul li:nth-child(2) a:hover{
+    background-color: rgb(50, 133, 101);
+}
+ul li:nth-child(3) a:hover{
+    background-color: rgb(26, 71, 218);
+>>>>>>> 5b258220482baccde7a987b055291be60cd9017d
 }
 
 .box{

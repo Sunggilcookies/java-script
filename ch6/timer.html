@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web stopwatch</title>
+    <style>
+        .inner_html_body{
+
+        }
+    </style>
+</head>
+<body class="'inner_html_body">
+    <div id="stopwatch" class="stopwatch"></div>
+    <div id="button_box" class="button_box">
+        <input type="button" id="reset" onclick="reset()"
+        value="초기화" class="btn" disabled style="color:red">
+        <input type="button" id="reset" onclick="start()"
+        value="시작" class="btn" disabled style="color:black">
+        <input type="button" id="reset" onclick="stop()"
+        value="중지"  disabled class="btn" style="color:blue">
+    </div>
+    <script>
+        stopwatch_box = document.getElementById("stopwahtch")
+        stopwatch_hour = 0
+        stopwatch_min = 0
+        stopwatch_sec = 0
+        stopwatch_millisec = 0
+        isActive=false
+
+        show();
+        
+        function show(){
+            time_text=filezero(stopwatch_hour) + ":" +
+            fillzero(stopwatch_min)+":"+fillzero(stopwatch_sec)+":"+
+            fillzero(stopwatch_millisec)
+                stopwatch_box.innerText = time_text;
+        }
+    </script>
+</body>
+</html>

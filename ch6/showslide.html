@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 반복하기</title>
+    <style>
+        section{
+            width: 600;
+            text-align: center;
+        }
+        img{border-radius: 20%;}
+    </style>    
+</head>
+<body>
+        <section>
+            <h2>커피의 세계</h2>
+            <img src="./images/coffee-pink.jpg" id="pic">
+        </section>
+
+        <script>
+            let picture =["./images/coffee-pink.jpg","./images/coffee-gray.jpg",
+            "./images/coffee-blue.jpg"];
+            let picIdx=0;
+
+            showSlide(); //호출
+
+            function showSlide(){
+                let img=document.getElementById("pic");
+                
+                img.src = picture[picIdx];
+                picIdx++;
+                
+                if(picIdx==picture.length){
+                    picIdx=0;
+                }
+                setTimeout(showSlide,200); //콜백함수 괄호 x
+            }
+
+        </script>
+</body>
+</html>

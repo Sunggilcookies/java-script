@@ -8,7 +8,17 @@
 </head>
 <body>
     <script>
-        console.log(Math.pow(3,4));
+        // console.log(Math.pow(3,4));
+       
+        function myPow(x,y){
+            let sumV= 1;
+           for(let i=0; i<y;i++){
+            sumV= sumV * x;
+            }
+        return sumV;
+    }
+       
+        document.write( myPow(3,4));
     </script>
 </body>
 </html>

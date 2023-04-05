@@ -1,0 +1,10 @@
+#wrapper{
+    width: 600px; margin : 0 auto;
+    text-align: center;
+}
+h2{text-aline:center;}
+form{background: #0094ff; padding: 30px;}
+input{width: 420px; padding: 10px;}
+.btnAdd{width: 60px;padding: 10px;}
+#itemList{background-color: rgb(255, 255, 255);
+ text-align: left;}
