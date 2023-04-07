@@ -24,8 +24,11 @@
 
         //ul안에 포함시키기
             let list = document.getElementById("myList");
-            // list.appendChild(newLi);
-            list.insertBefore(newLi, list.childNodes(0));
+            list.appendChild(newLi); 
+            document.getElementById("myList").appendChild(newLi)
+
+            //insertBefore- 특정위체에 추가 []앞에 추가됨
+            list.insertBefore(newLi, list.childNodes[0]);
         }   
     </script>
 </body>
