@@ -1,6 +1,11 @@
-body{ height: 2000px;}
-section{background: url("../images/bg5.jpg") no-repeat};
+body{ height: 2000px;
+    }
+section{background: url("../images/bg5.jpg") no-repeat fixed;
+            height: 800px;}
+
 h1{
+
+    color: red;
     width: 200px;
     font-size:5em;
     position: absolute;
